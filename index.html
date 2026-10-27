@@ -52,9 +52,7 @@
     <header class="fixed top-0 left-0 right-0 z-50 bg-surface-950/80 backdrop-blur-md border-b border-zinc-800/80">
         <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="#hero" class="flex items-center gap-3 group">
-                <span class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-indigo-400 flex items-center justify-center font-bold text-lg text-white shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform">
-                    CT
-                </span>
+                <img src="profile.jpg" alt="Carlos Torres" class="w-10 h-10 rounded-xl object-cover border border-indigo-500/40 shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform">
                 <span class="font-bold text-lg tracking-tight text-white group-hover:text-indigo-400 transition-colors">
                     Carlos Torres
                 </span>
@@ -101,12 +99,23 @@
 
                 <div class="grid md:grid-cols-12 gap-12 items-center">
                     <div class="md:col-span-8 space-y-6">
-                        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
-                            Senior Software Engineer <br class="hidden sm:block" />
-                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-sky-300 to-indigo-200 text-2xl sm:text-4xl block mt-2 font-bold">
-                                DevSecOps &amp; Compliance · AI Integrations · 15+ YOE
-                            </span>
-                        </h1>
+                        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+                            <div class="relative group flex-shrink-0">
+                                <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-indigo-500 via-sky-400 to-indigo-600 opacity-70 blur group-hover:opacity-100 transition duration-500"></div>
+                                <img src="profile.jpg" alt="Carlos Torres" class="relative w-28 h-28 sm:w-32 sm:h-32 rounded-2xl object-cover border-2 border-surface-900 shadow-2xl">
+                            </div>
+                            <div class="text-center sm:text-left space-y-2">
+                                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
+                                    Carlos Torres
+                                </h1>
+                                <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-sky-300 to-indigo-200 text-xl sm:text-2xl font-bold block">
+                                    Senior Software Engineer
+                                </span>
+                                <span class="text-indigo-300 text-xs sm:text-sm font-mono block">
+                                    DevSecOps &amp; Compliance · AI Integrations · 15+ YOE
+                                </span>
+                            </div>
+                        </div>
                         <p class="text-lg sm:text-xl text-zinc-300 max-w-2xl leading-relaxed">
                             Más de <strong>15 años de experiencia</strong> diseñando arquitecturas backend de alta demanda, cumplimiento <strong>SOC 2 Type II / DevSecOps</strong>, orquestación en la nube (<strong>GCP / AWS</strong>) e integración de <strong>Inteligencia Artificial</strong> en flujos de desarrollo y producto.
                         </p>
