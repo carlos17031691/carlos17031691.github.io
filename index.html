@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Torres | Senior Software Engineer | DevSecOps & Compliance | AI Integrations | 15+ YOE</title>
+    <meta name="description" content="Carlos Torres - Senior Software Engineer | DevSecOps & Compliance | AI Integrations | 15+ YOE. Arquitecturas backend, GCP Cloud Run, Node.js/NestJS, SOC 2 y sistemas de alto rendimiento.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            400: '#818cf8',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            900: '#1e1b4b',
+                        },
+                        surface: {
+                            800: '#18181b',
+                            900: '#09090b',
+                            950: '#030712',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .code-font { font-family: 'JetBrains Mono', monospace; }
+        .glow-indigo {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-surface-950 text-zinc-100 min-h-screen selection:bg-indigo-500 selection:text-white antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-surface-950/80 backdrop-blur-md border-b border-zinc-800/80">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#hero" class="flex items-center gap-3 group">
+                <span class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-indigo-400 flex items-center justify-center font-bold text-lg text-white shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform">
+                    CT
+                </span>
+                <span class="font-bold text-lg tracking-tight text-white group-hover:text-indigo-400 transition-colors">
+                    Carlos Torres
+                </span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-400">
+                <a href="#sobre-mi" class="hover:text-indigo-400 transition-colors">Sobre Mí</a>
+                <a href="#experiencia" class="hover:text-indigo-400 transition-colors">Experiencia</a>
+                <a href="#proyectos" class="hover:text-indigo-400 transition-colors">Proyectos</a>
+                <a href="#stack" class="hover:text-indigo-400 transition-colors">Tech Stack</a>
+                <a href="#contacto" class="hover:text-indigo-400 transition-colors">Contacto</a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <a href="https://www.linkedin.com/in/carlostorres1983" target="_blank" rel="noopener noreferrer" 
+                   class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold transition-all shadow-md shadow-indigo-600/20 hover:shadow-indigo-600/40 hover:-translate-y-0.5">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/carlos17031691" target="_blank" rel="noopener noreferrer" 
+                   class="p-2 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-zinc-700 text-zinc-300 hover:text-white transition-colors">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section id="hero" class="relative py-28 px-6 overflow-hidden">
+            <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(99,102,241,0.15),rgba(255,255,255,0))]"></div>
+            
+            <div class="max-w-6xl mx-auto relative z-10 text-center md:text-left">
+                <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-zinc-900 border border-zinc-800 text-xs text-indigo-300 font-mono mb-8">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span>carlos-torres.is-a.dev · Google Cloud & AI Native</span>
+                </div>
+
+                <div class="grid md:grid-cols-12 gap-12 items-center">
+                    <div class="md:col-span-8 space-y-6">
+                        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                            Senior Software Engineer <br class="hidden sm:block" />
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-sky-300 to-indigo-200 text-2xl sm:text-4xl block mt-2 font-bold">
+                                DevSecOps &amp; Compliance · AI Integrations · 15+ YOE
+                            </span>
+                        </h1>
+                        <p class="text-lg sm:text-xl text-zinc-300 max-w-2xl leading-relaxed">
+                            Más de <strong>15 años de experiencia</strong> diseñando arquitecturas backend de alta demanda, cumplimiento <strong>SOC 2 Type II / DevSecOps</strong>, orquestación en la nube (<strong>GCP / AWS</strong>) e integración de <strong>Inteligencia Artificial</strong> en flujos de desarrollo y producto.
+                        </p>
+
+                        <div class="flex flex-wrap gap-4 pt-4 justify-center md:justify-start">
+                            <a href="#proyectos" class="px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold shadow-lg shadow-indigo-600/30 hover:-translate-y-0.5 transition-all">
+                                Explorar Proyectos &amp; Demos
+                            </a>
+                            <a href="https://www.linkedin.com/in/carlostorres1983" target="_blank" rel="noopener noreferrer" 
+                               class="px-6 py-3 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 text-zinc-200 hover:text-white font-semibold transition-all flex items-center gap-2">
+                                <svg class="w-4 h-4 fill-indigo-400" viewBox="0 0 24 24">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                                <span>Conectar en LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Metrics / Highlights Card -->
+                    <div class="md:col-span-4 bg-zinc-900/60 border border-zinc-800/80 rounded-2xl p-6 glow-indigo backdrop-blur-sm space-y-6">
+                        <div class="border-b border-zinc-800/80 pb-4">
+                            <span class="text-3xl font-extrabold text-indigo-400">15+</span>
+                            <p class="text-xs text-zinc-400 mt-1 uppercase font-semibold tracking-wider">Años de Trayectoria</p>
+                            <p class="text-sm text-zinc-300 mt-1">Desde infraestructura de redes hasta arquitectura cloud y liderazgo técnico.</p>
+                        </div>
+                        <div class="border-b border-zinc-800/80 pb-4">
+                            <span class="text-3xl font-extrabold text-emerald-400">10,000+</span>
+                            <p class="text-xs text-zinc-400 mt-1 uppercase font-semibold tracking-wider">Usuarios Enterprise</p>
+                            <p class="text-sm text-zinc-300 mt-1">Plataformas SaaS de alto tráfico con 99.9% uptime continuo.</p>
+                        </div>
+                        <div>
+                            <span class="text-3xl font-extrabold text-sky-400">SOC 2</span>
+                            <p class="text-xs text-zinc-400 mt-1 uppercase font-semibold tracking-wider">Type II Compliance</p>
+                            <p class="text-sm text-zinc-300 mt-1">DevSecOps, remediación de pentesting y seguridad integral.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Mí Section -->
+        <section id="sobre-mi" class="py-20 px-6 border-t border-zinc-900 bg-surface-900/30">
+            <div class="max-w-6xl mx-auto">
+                <div class="max-w-2xl mb-12">
+                    <span class="text-indigo-400 text-xs font-mono font-semibold uppercase tracking-widest">Trayectoria</span>
+                    <h2 class="text-3xl font-bold text-white mt-2">Visión Holística de Software &amp; Cloud</h2>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-xl p-6 hover:border-zinc-700 transition-colors">
+                        <div class="w-12 h-12 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-xl mb-4">
+                            ⚡
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Backends de Alto Rendimiento</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed">
+                            Especialista en Node.js (NestJS, Hapi), TypeScript, Python y microservicios orientados a eventos, manejo de cargas concurrentes y ledger de pagos idempotentes.
+                        </p>
+                    </div>
+                    <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-xl p-6 hover:border-zinc-700 transition-colors">
+                        <div class="w-12 h-12 rounded-lg bg-sky-500/10 border border-sky-500/20 text-sky-400 flex items-center justify-center font-bold text-xl mb-4">
+                            ☁️
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Arquitectura Google Cloud (GCP)</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed">
+                            Diseño de infraestructura serverless con Cloud Run, Docker containers, Artifact Registry y pipelines de despliegue continuo con cero downtime.
+                        </p>
+                    </div>
+                    <div class="bg-zinc-900/40 border border-zinc-800/80 rounded-xl p-6 hover:border-zinc-700 transition-colors">
+                        <div class="w-12 h-12 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xl mb-4">
+                            🤖
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">IA &amp; Procesamiento Multimedia</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed">
+                            Integración de modelos fundacionales (Claude, Gemini) para automatizaciones, workflows de compliance y pipelines complejos de video con FFmpeg.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiencia Section -->
+        <section id="experiencia" class="py-20 px-6 border-t border-zinc-900">
+            <div class="max-w-6xl mx-auto">
+                <div class="max-w-2xl mb-14">
+                    <span class="text-indigo-400 text-xs font-mono font-semibold uppercase tracking-widest">Historial Laboral</span>
+                    <h2 class="text-3xl font-bold text-white mt-2">Experiencia Profesional</h2>
+                </div>
+
+                <div class="space-y-8 relative before:absolute before:inset-0 before:left-3 md:before:left-32 before:w-0.5 before:bg-zinc-800">
+                    
+                    <!-- Sendspark -->
+                    <div class="relative flex flex-col md:flex-row gap-6 md:gap-12 items-start group">
+                        <div class="md:w-32 flex-shrink-0 text-left md:text-right">
+                            <span class="inline-block px-2.5 py-1 rounded bg-indigo-950/60 border border-indigo-800/50 text-indigo-300 font-mono text-xs font-semibold">
+                                2021 – 2026
+                            </span>
+                        </div>
+                        <div class="absolute left-1.5 md:left-[7.75rem] top-1.5 w-3.5 h-3.5 rounded-full bg-indigo-500 border-4 border-surface-950"></div>
+                        <div class="flex-1 bg-zinc-900/50 border border-zinc-800/80 rounded-2xl p-6 hover:border-zinc-700 transition-all">
+                            <div class="flex flex-wrap items-baseline justify-between gap-2 mb-2">
+                                <h3 class="text-xl font-bold text-white">Senior Software Engineer</h3>
+                                <span class="text-sm font-semibold text-indigo-400">Sendspark (San Antonio, TX · Remoto)</span>
+                            </div>
+                            <p class="text-sm text-zinc-300 mb-4 leading-relaxed">
+                                Arquitectura y escalado de APIs de alta demanda que procesan miles de peticiones diarias. Liderazgo en pipelines de video con FFmpeg y modelos de IA para transcodificación automática, sincronización labial (lip-sync) y generación dinámica de miniaturas.
+                            </p>
+                            <div class="flex flex-wrap gap-2 text-xs font-mono">
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">Node.js / NestJS</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">FFmpeg &amp; AI</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">PostgreSQL</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">MongoDB</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">AWS &amp; GCP</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-emerald-400">SOC 2 Type II</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PRAGMA -->
+                    <div class="relative flex flex-col md:flex-row gap-6 md:gap-12 items-start group">
+                        <div class="md:w-32 flex-shrink-0 text-left md:text-right">
+                            <span class="inline-block px-2.5 py-1 rounded bg-zinc-800 border border-zinc-700 text-zinc-300 font-mono text-xs font-semibold">
+                                2021 – 2022
+                            </span>
+                        </div>
+                        <div class="absolute left-1.5 md:left-[7.75rem] top-1.5 w-3.5 h-3.5 rounded-full bg-zinc-500 border-4 border-surface-950"></div>
+                        <div class="flex-1 bg-zinc-900/50 border border-zinc-800/80 rounded-2xl p-6 hover:border-zinc-700 transition-all">
+                            <div class="flex flex-wrap items-baseline justify-between gap-2 mb-2">
+                                <h3 class="text-xl font-bold text-white">Node.js Backend Developer</h3>
+                                <span class="text-sm font-semibold text-zinc-400">PRAGMA (Colombia · Remoto)</span>
+                            </div>
+                            <p class="text-sm text-zinc-300 mb-4 leading-relaxed">
+                                Desarrollo y mantenimiento de aplicaciones web y móviles de alta disponibilidad bajo arquitecturas serverless con AWS Lambda y estrictas prácticas DevSecOps en GitLab-CI y Azure DevOps.
+                            </p>
+                            <div class="flex flex-wrap gap-2 text-xs font-mono">
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">JavaScript</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">Serverless</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">AWS Lambda</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">GitLab CI/CD</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quantum Connexion & AOS -->
+                    <div class="relative flex flex-col md:flex-row gap-6 md:gap-12 items-start group">
+                        <div class="md:w-32 flex-shrink-0 text-left md:text-right">
+                            <span class="inline-block px-2.5 py-1 rounded bg-zinc-800 border border-zinc-700 text-zinc-300 font-mono text-xs font-semibold">
+                                2020 – 2021
+                            </span>
+                        </div>
+                        <div class="absolute left-1.5 md:left-[7.75rem] top-1.5 w-3.5 h-3.5 rounded-full bg-zinc-500 border-4 border-surface-950"></div>
+                        <div class="flex-1 bg-zinc-900/50 border border-zinc-800/80 rounded-2xl p-6 hover:border-zinc-700 transition-all">
+                            <div class="flex flex-wrap items-baseline justify-between gap-2 mb-2">
+                                <h3 class="text-xl font-bold text-white">Software Developer II</h3>
+                                <span class="text-sm font-semibold text-zinc-400">Quantum Connexion &amp; AOS (Remoto)</span>
+                            </div>
+                            <p class="text-sm text-zinc-300 mb-4 leading-relaxed">
+                                Diseño de soluciones empresariales con C#, .NET Core, Node.js y Angular. Modernización y optimización de sistemas heredados con mejoras críticas en tiempo de respuesta.
+                            </p>
+                            <div class="flex flex-wrap gap-2 text-xs font-mono">
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">C# / .NET Core</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">Node.js</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">Angular</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lab Satoshi -->
+                    <div class="relative flex flex-col md:flex-row gap-6 md:gap-12 items-start group">
+                        <div class="md:w-32 flex-shrink-0 text-left md:text-right">
+                            <span class="inline-block px-2.5 py-1 rounded bg-zinc-800 border border-zinc-700 text-zinc-300 font-mono text-xs font-semibold">
+                                2018 – 2020
+                            </span>
+                        </div>
+                        <div class="absolute left-1.5 md:left-[7.75rem] top-1.5 w-3.5 h-3.5 rounded-full bg-zinc-500 border-4 border-surface-950"></div>
+                        <div class="flex-1 bg-zinc-900/50 border border-zinc-800/80 rounded-2xl p-6 hover:border-zinc-700 transition-all">
+                            <div class="flex flex-wrap items-baseline justify-between gap-2 mb-2">
+                                <h3 class="text-xl font-bold text-white">Tech Lead / Scrum Master</h3>
+                                <span class="text-sm font-semibold text-zinc-400">Lab Satoshi (Bogotá, Colombia)</span>
+                            </div>
+                            <p class="text-sm text-zinc-300 mb-4 leading-relaxed">
+                                Liderazgo del departamento de ingeniería, dirección ágil (Scrum), desarrollo de plataformas web complejas, integración con tecnologías Blockchain e infraestructura Linux.
+                            </p>
+                            <div class="flex flex-wrap gap-2 text-xs font-mono">
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">Tech Leadership</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">Blockchain</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">Scrum</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">Linux Infra</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos Section -->
+        <section id="proyectos" class="py-20 px-6 border-t border-zinc-900 bg-surface-900/30">
+            <div class="max-w-6xl mx-auto">
+                <div class="max-w-2xl mb-12">
+                    <span class="text-indigo-400 text-xs font-mono font-semibold uppercase tracking-widest">Portafolio &amp; Cloud Demos</span>
+                    <h2 class="text-3xl font-bold text-white mt-2">Proyectos &amp; Arquitecturas</h2>
+                    <p class="text-zinc-400 text-sm mt-1">Servicios diseñados para despliegue serverless en la capa gratuita de Google Cloud (Cloud Run) y GitHub.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+
+                    <!-- Proyecto 1: Base AI -->
+                    <div class="bg-zinc-900/50 border border-zinc-800/80 rounded-2xl p-7 hover:border-indigo-500/50 transition-all flex flex-col justify-between group">
+                        <div>
+                            <div class="flex items-center justify-between gap-4 mb-4">
+                                <span class="text-xs font-mono px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                                    CLI Tool / Architecture
+                                </span>
+                                <a href="https://github.com/carlos17031691/base-ai" target="_blank" rel="noopener noreferrer" class="text-zinc-400 hover:text-white transition-colors">
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-indigo-300 transition-colors">base-ai</h3>
+                            <p class="text-zinc-300 text-sm leading-relaxed mb-6">
+                                CLI Scaffolding genérico para proyectos de software escalables gobernados por Inteligencia Artificial. Fuente de verdad centralizada para agentes autónomos y repositorios multi-servicio independientes.
+                            </p>
+                        </div>
+                        <div>
+                            <div class="flex flex-wrap gap-2 text-xs font-mono mb-4">
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">TypeScript</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">Node.js</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">AI Governance</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">CLI</span>
+                            </div>
+                            <a href="https://github.com/carlos17031691/base-ai" target="_blank" rel="noopener noreferrer" 
+                               class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition-colors">
+                                <span>Ver Repositorio en GitHub</span>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 2: Backend Ledger Fintech -->
+                    <div class="bg-zinc-900/50 border border-zinc-800/80 rounded-2xl p-7 hover:border-emerald-500/50 transition-all flex flex-col justify-between group">
+                        <div>
+                            <div class="flex items-center justify-between gap-4 mb-4">
+                                <span class="text-xs font-mono px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">
+                                    Fintech &amp; High Concurrency
+                                </span>
+                                <a href="https://github.com/carlos17031691/prueba-tecnica-backend-ledger-javalabs" target="_blank" rel="noopener noreferrer" class="text-zinc-400 hover:text-white transition-colors">
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-emerald-300 transition-colors">Double-Entry Payment Ledger</h3>
+                            <p class="text-zinc-300 text-sm leading-relaxed mb-6">
+                                Motor de contabilidad de doble partida (double-entry ledger) con soporte para webhooks de pago idempotentes, protección contra condiciones de carrera y benchmarks de alta concurrencia. Listo para Cloud Run.
+                            </p>
+                        </div>
+                        <div>
+                            <div class="flex flex-wrap gap-2 text-xs font-mono mb-4">
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">JavaScript / Node.js</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">Idempotency</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">GCP Cloud Run</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">High Concurrency</span>
+                            </div>
+                            <a href="https://github.com/carlos17031691/prueba-tecnica-backend-ledger-javalabs" target="_blank" rel="noopener noreferrer" 
+                               class="inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-400 hover:text-emerald-300 transition-colors">
+                                <span>Ver Código Fuente</span>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 3: Media & Video Processing Architecture -->
+                    <div class="bg-zinc-900/50 border border-zinc-800/80 rounded-2xl p-7 hover:border-sky-500/50 transition-all flex flex-col justify-between group">
+                        <div>
+                            <div class="flex items-center justify-between gap-4 mb-4">
+                                <span class="text-xs font-mono px-3 py-1 rounded-full bg-sky-500/10 text-sky-300 border border-sky-500/20">
+                                    Media Engineering &amp; AI
+                                </span>
+                                <span class="text-xs font-mono text-zinc-400">Sendspark Production</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-sky-300 transition-colors">Video Processing &amp; Lip-Sync Pipeline</h3>
+                            <p class="text-zinc-300 text-sm leading-relaxed mb-6">
+                                Arquitectura distribuida para renderizado masivo, transcodificación adaptable mediante FFmpeg, pipelines de modelos de voz y sincronización labial con IA para miles de profesionales de ventas.
+                            </p>
+                        </div>
+                        <div>
+                            <div class="flex flex-wrap gap-2 text-xs font-mono mb-4">
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">FFmpeg</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">AI Lip-Sync</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">Event-Driven</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">AWS / GCP</span>
+                            </div>
+                            <span class="text-xs text-zinc-400">Arquitectura de grado empresarial en producción</span>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 4: ONIX ERP -->
+                    <div class="bg-zinc-900/50 border border-zinc-800/80 rounded-2xl p-7 hover:border-indigo-500/50 transition-all flex flex-col justify-between group">
+                        <div>
+                            <div class="flex items-center justify-between gap-4 mb-4">
+                                <span class="text-xs font-mono px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                                    Enterprise FullStack
+                                </span>
+                                <span class="text-xs font-mono text-zinc-400">NestJS 11 + Nuxt 4</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-indigo-300 transition-colors">ONIX ERP System</h3>
+                            <p class="text-zinc-300 text-sm leading-relaxed mb-6">
+                                Plataforma integral ERP para joyerías con facturación electrónica DIAN. Backend modular en NestJS 11 con Prisma 7, base de datos relacional y frontend reactivo en Nuxt 4 / Vue 3.5.
+                            </p>
+                        </div>
+                        <div>
+                            <div class="flex flex-wrap gap-2 text-xs font-mono mb-4">
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">NestJS 11</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">Prisma ORM</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">PostgreSQL</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">Nuxt 4 / Vue</span>
+                            </div>
+                            <span class="text-xs text-zinc-400">Arquitectura multi-tenant y compliance fiscal</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section id="stack" class="py-20 px-6 border-t border-zinc-900">
+            <div class="max-w-6xl mx-auto">
+                <div class="max-w-2xl mb-12">
+                    <span class="text-indigo-400 text-xs font-mono font-semibold uppercase tracking-widest">Habilidades &amp; Herramientas</span>
+                    <h2 class="text-3xl font-bold text-white mt-2">Tecnologías Principales</h2>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <!-- Backend -->
+                    <div class="bg-zinc-900/50 border border-zinc-800/80 rounded-xl p-5">
+                        <h3 class="text-xs font-mono text-indigo-400 uppercase font-semibold mb-3">Backend &amp; Runtime</h3>
+                        <ul class="space-y-2 text-sm text-zinc-300">
+                            <li>• Node.js (NestJS, Hapi, Express)</li>
+                            <li>• TypeScript &amp; JavaScript ES6+</li>
+                            <li>• Python</li>
+                            <li>• C# (.NET Core)</li>
+                            <li>• PHP (Laravel)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Cloud & DevOps -->
+                    <div class="bg-zinc-900/50 border border-zinc-800/80 rounded-xl p-5">
+                        <h3 class="text-xs font-mono text-sky-400 uppercase font-semibold mb-3">Cloud &amp; DevOps</h3>
+                        <ul class="space-y-2 text-sm text-zinc-300">
+                            <li>• Google Cloud (Cloud Run, GCE)</li>
+                            <li>• AWS (Lambda, S3, CloudFront)</li>
+                            <li>• Docker &amp; Containers</li>
+                            <li>• CI/CD &amp; DevSecOps</li>
+                            <li>• SOC 2 Type II Security</li>
+                        </ul>
+                    </div>
+
+                    <!-- Data & Storage -->
+                    <div class="bg-zinc-900/50 border border-zinc-800/80 rounded-xl p-5">
+                        <h3 class="text-xs font-mono text-emerald-400 uppercase font-semibold mb-3">Bases de Datos</h3>
+                        <ul class="space-y-2 text-sm text-zinc-300">
+                            <li>• PostgreSQL</li>
+                            <li>• MongoDB &amp; Atlas</li>
+                            <li>• Redis (Caché &amp; Colas)</li>
+                            <li>• Prisma ORM / TypeORM</li>
+                            <li>• Firestore</li>
+                        </ul>
+                    </div>
+
+                    <!-- AI & Multimedia -->
+                    <div class="bg-zinc-900/50 border border-zinc-800/80 rounded-xl p-5">
+                        <h3 class="text-xs font-mono text-amber-400 uppercase font-semibold mb-3">AI &amp; Media</h3>
+                        <ul class="space-y-2 text-sm text-zinc-300">
+                            <li>• FFmpeg Video Transcoding</li>
+                            <li>• Modelos de IA (Claude, Gemini)</li>
+                            <li>• Lip-sync &amp; Audio Processing</li>
+                            <li>• React, Next.js, Vue / Nuxt</li>
+                            <li>• Tailwind CSS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto Section -->
+        <section id="contacto" class="py-24 px-6 border-t border-zinc-900 bg-surface-900/40 relative">
+            <div class="max-w-4xl mx-auto text-center space-y-8">
+                <span class="text-indigo-400 text-xs font-mono font-semibold uppercase tracking-widest">Contacto Profesional</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+                    ¿Listo para construir proyectos de alto impacto?
+                </h2>
+                <p class="text-zinc-300 text-lg max-w-xl mx-auto leading-relaxed">
+                    Conversemos directamente a través de LinkedIn para oportunidades de ingeniería senior, consultoría cloud o proyectos de arquitectura.
+                </p>
+
+                <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="https://www.linkedin.com/in/carlostorres1983" target="_blank" rel="noopener noreferrer" 
+                       class="w-full sm:w-auto px-8 py-4 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-base transition-all shadow-xl shadow-indigo-600/30 hover:-translate-y-0.5 flex items-center justify-center gap-3">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                        <span>Conectar en LinkedIn (carlostorres1983)</span>
+                    </a>
+                    <a href="https://github.com/carlos17031691" target="_blank" rel="noopener noreferrer" 
+                       class="w-full sm:w-auto px-8 py-4 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 text-zinc-200 hover:text-white font-bold text-base transition-all flex items-center justify-center gap-3">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <span>GitHub @carlos17031691</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-zinc-900 bg-surface-950 text-xs text-zinc-400">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Carlos Torres · Dominio <span class="text-indigo-400 font-mono">carlos-torres.is-a.dev</span></p>
+            <p class="text-zinc-400">Alojado en GitHub Pages · Servicios y APIs en Google Cloud Platform (GCP)</p>
+        </div>
+    </footer>
+
+</body>
+</html>
