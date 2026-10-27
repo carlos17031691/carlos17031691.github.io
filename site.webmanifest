@@ -1,0 +1,21 @@
+{
+  "name": "Carlos Torres | Senior Software Engineer",
+  "short_name": "Carlos Torres",
+  "description": "Portafolio profesional de Carlos Torres. Senior Software Engineer con 15+ años de experiencia.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#09090b",
+  "theme_color": "#6366f1",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "/profile.jpg",
+      "sizes": "800x800",
+      "type": "image/jpeg"
+    }
+  ]
+}
