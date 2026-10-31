@@ -58,6 +58,9 @@
         "Google Cloud Platform",
         "DevSecOps",
         "SOC 2 Type II",
+        "PCI-DSS v4.0",
+        "Payment Orchestration",
+        "Double-Entry Ledger",
         "Node.js",
         "NestJS",
         "PHP Laravel",
@@ -556,7 +559,48 @@
 
                 <div class="grid md:grid-cols-2 gap-8">
 
-                    <!-- Proyecto 1: Base AI -->
+                    <!-- Proyecto 1: AegisLedger Core Engine -->
+                    <div class="relative overflow-hidden bg-zinc-900/50 border border-emerald-800/50 rounded-2xl p-7 hover:border-emerald-500/60 transition-all flex flex-col justify-between group">
+                        <div class="absolute -top-32 -right-32 w-72 h-72 bg-emerald-500/10 blur-3xl rounded-full pointer-events-none"></div>
+                        <div class="relative">
+                            <div class="flex items-center justify-between gap-4 mb-4">
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <span class="text-xs font-mono px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">
+                                        Proyecto Destacado · Fintech Core
+                                    </span>
+                                    <span class="text-xs font-mono px-3 py-1 rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/20">
+                                        PCI-DSS v4.0 · SOC 2 Type II
+                                    </span>
+                                </div>
+                                <a href="https://github.com/carlos17031691/aegis-ledger" target="_blank" rel="noopener noreferrer" class="text-zinc-400 hover:text-white transition-colors shrink-0">
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-emerald-300 transition-colors">AegisLedger Core Engine</h3>
+                            <p class="text-zinc-300 text-sm leading-relaxed">
+                                Orquestador autónomo de pagos con Stripe en USD, construido en NestJS + Fastify bajo arquitectura hexagonal. Ledger inmutable de doble partida con hash encadenado SHA-256, transacciones <code class="text-emerald-300">SERIALIZABLE</code> e idempotencia distribuida en Redis. Motor híbrido de riesgo: fast-path heurístico en &lt; 2 ms con escalado a RAG vectorial (pgvector) bajo un SLA estricto de 850 ms y fallback automático a 3D-Secure.
+                            </p>
+                        </div>
+                        <div class="relative mt-6 flex flex-col gap-4">
+                            <div class="flex flex-wrap gap-2 text-xs font-mono">
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">TypeScript</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">NestJS + Fastify</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">PostgreSQL 16 + pgvector</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">Redis</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">Vercel AI SDK</span>
+                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">Angular 17</span>
+                            </div>
+                            <a href="https://carlos-torres.is-a.dev/proyectos/aegis-ledger" target="_blank" rel="noopener noreferrer" 
+                               class="inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-400 hover:text-emerald-300 transition-colors shrink-0">
+                                <span>Ver Demo en Vivo</span>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 2: Base AI -->
                     <div class="bg-zinc-900/50 border border-zinc-800/80 rounded-2xl p-7 hover:border-indigo-500/50 transition-all flex flex-col justify-between group">
                         <div>
                             <div class="flex items-center justify-between gap-4 mb-4">
@@ -584,39 +628,6 @@
                             <a href="https://github.com/carlos17031691/base-ai" target="_blank" rel="noopener noreferrer" 
                                class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition-colors">
                                 <span>Ver Repositorio en GitHub</span>
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Proyecto 2: Backend Ledger Fintech -->
-                    <div class="bg-zinc-900/50 border border-zinc-800/80 rounded-2xl p-7 hover:border-emerald-500/50 transition-all flex flex-col justify-between group">
-                        <div>
-                            <div class="flex items-center justify-between gap-4 mb-4">
-                                <span class="text-xs font-mono px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">
-                                    Fintech &amp; High Concurrency
-                                </span>
-                                <a href="https://github.com/carlos17031691/prueba-tecnica-backend-ledger-javalabs" target="_blank" rel="noopener noreferrer" class="text-zinc-400 hover:text-white transition-colors">
-                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                            <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-emerald-300 transition-colors">Double-Entry Payment Ledger</h3>
-                            <p class="text-zinc-300 text-sm leading-relaxed mb-6">
-                                Motor de contabilidad de doble partida (double-entry ledger) con soporte para webhooks de pago idempotentes, protección contra condiciones de carrera y benchmarks de alta concurrencia. Listo para Cloud Run.
-                            </p>
-                        </div>
-                        <div>
-                            <div class="flex flex-wrap gap-2 text-xs font-mono mb-4">
-                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">JavaScript / Node.js</span>
-                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">Idempotency</span>
-                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">GCP Cloud Run</span>
-                                <span class="px-2 py-1 rounded bg-zinc-800 text-zinc-300">High Concurrency</span>
-                            </div>
-                            <a href="https://github.com/carlos17031691/prueba-tecnica-backend-ledger-javalabs" target="_blank" rel="noopener noreferrer" 
-                               class="inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-400 hover:text-emerald-300 transition-colors">
-                                <span>Ver Código Fuente</span>
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                             </a>
                         </div>
